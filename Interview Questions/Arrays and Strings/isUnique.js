@@ -9,10 +9,11 @@
  */
 
 /**
- * checks if the string has all the unique
- * characters or not.
+ * isUnique:
  * @param {string} str - string to check
  * @return {boolean}
+ * @description - checks if the string has
+ * all the unique characters or not.
  */
 function isUnique(str) {
     let chars = new Map();
