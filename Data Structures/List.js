@@ -32,6 +32,16 @@ class List {
      */
     constructor() {
         this.head = new Node();
+        this.listLength = 0;
+    }
+
+    /**
+     * @readonly
+     * @memberof List
+     * @description length of list
+     */
+    get length() {
+        return this.listLength;
     }
 
     /**
@@ -52,6 +62,7 @@ class List {
         }
         let node = new Node(value, ptr.next);
         ptr.next = node;
+        this.listLength++;
     }
 
     /**
@@ -70,6 +81,7 @@ class List {
             prevPtr.next = currPtr.next;
             delete currPtr.value;
             delete currPtr.next;
+            this.listLength--;
         }
     }
 
