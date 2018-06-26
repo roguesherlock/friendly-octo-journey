@@ -206,12 +206,14 @@ class List {
      */
     print() {
         let ptr = this.head;
-        console.log('[');
+        let list = '[ ';
         while (ptr != null) {
-            console.log('  ' + ptr.value + ',');
+            list += ptr.value;
+            list += ptr.next != null ? ', ': '';
             ptr = ptr.next;
         }
-        console.log(']');
+        list += ' ]';
+        console.log(list);
     }
 };
 
