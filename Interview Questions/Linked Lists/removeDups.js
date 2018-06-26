@@ -32,15 +32,7 @@ function removeDups(head) {
     }
 }
 
-let list = new List.List();
-list.add(2);
-list.add(3);
-list.add(5);
-list.add(2);
-list.add(2);
-list.add(5);
-list.add(7);
-list.add(3);
+let list = new List([2, 3, 5, 2, 2, 5, 7, 3]);
 
 list.print();
 removeDups(list.head);

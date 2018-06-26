@@ -36,11 +36,7 @@ function deleteMiddleNode(node) {
     delete ptr.next;
 }
 
-let list = new List.List();
-list.add(2);
-list.add(3);
-list.add(5);
-list.add(6);
+let list = new List([2, 3, 5, 6]);
 
 list.print();
 /**
